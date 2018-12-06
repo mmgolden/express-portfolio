@@ -1,0 +1,20 @@
+{
+  "name": "express-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio created with Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmgolden/express-portfolio.git"
+  },
+  "author": "Melinda Golden",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
+}

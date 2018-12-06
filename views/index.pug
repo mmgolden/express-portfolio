@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro
+    div
+
+      //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
+      h1 Heading
+
+      //- Add a description for your portfolio, what this project is, it's purpose, what it's suppossed to accomplish, etc. 
+      p.lead.text-light
+        | Portfolio Description
+  article.grid-container.portfolio-index
+    
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+
+      //- Use the Pug `each` iterator to create a projet img, title and link in the markup for each of the projects you are showcasing.  
+      
+      //- Use a combination of interpolation and template literals as needed to dynamically generate the the routes in the href, as well as the img's src and the projects title.
+      
+      //- Here's what the Pug for each project example should look like. 
+
+      .cell
+        a(href='#')
+          img.thumbnail(src='https://placehold.it/550x550')
+          h5 Title
+      
