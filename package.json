@@ -9,12 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmgolden/express-portfolio.git"
+    "url": "https://github.com/mmgolden/express-portfolio.git"
   },
   "author": "Melinda Golden",
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
     "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
   }
 }
