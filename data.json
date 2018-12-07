@@ -2,38 +2,38 @@
     "projects": [
         {
             "id": 0,
-            "project_name": "Random Quote Generator",
-            "description": "This app displays random quotes from women in tech automatically or by clicking on a button. It also changes the background color.",
+            "project_name": "Employee Directory",
+            "description": "This app is built for a fictional company called Awesome Startup, a distibuted company with remote employees working all over the world. They need a way for employees to share contact information with each other. The employee directory uses the Random User Generator API (randomuser.me) to grab information for 12 random 'employees'. This app uses the browser's Fetch API to request a JSON object from the API and parse the data so that 12 employees are listed with their thumbnail image, full name, email, and location.",
             "technologies": [
+                "Fetch API",
                 "JavaScript",
-                "CSS",
-                "HTML"
+                "CSS"
             ],
-            "live_link": "https://mmgolden.github.io/random-quote-generator/",
-            "github_link": "https://github.com/mmgolden/random-quote-generator",
+            "live_link": "https://mmgolden.github.io/employee-directory/",
+            "github_link": "https://github.com/mmgolden/employee-directory",
             "image_urls": [
-                "../images/random1.jpg",
-                "../images/random2.jpg",
-                "../images/random3.jpg",
-                "../images/random4.jpg"
+                "/static/images/directory1.jpg",
+                "/static/images/directory2.jpg",
+                "/static/images/directory3.jpg",
+                "/static/images/directory4.jpg"
             ]
         },
         {
             "id": 1,
-            "project_name": "List Pagination and Filtering",
-            "description": "This project enhances the usability of a web page with pagination. This project uses 'progressive enhancement' so that JavaScript is used to enhance the web page, without making the web page dependent upon JavaScript. The pagination is dynamic, meaning it will work for any list containing any number of items.",
+            "project_name": "Game Show App",
+            "description": "This is a browser-based, word guessing game called 'Phrase Hunter.' This project focuses on OOP (Object Oriented Programming). In the game, the player tries to guess a random, hidden phrase by clicking on letters on an onscreen keyboard.",
             "technologies": [
                 "JavaScript",
                 "CSS",
                 "HTML"
             ],
-            "live_link": "https://mmgolden.github.io/list-pagination-and-filtering/",
-            "github_link": "https://github.com/mmgolden/list-pagination-and-filtering",
+            "live_link": "https://mmgolden.github.io/game-show-app/",
+            "github_link": "https://github.com/mmgolden/game-show-app",
             "image_urls": [
-                "../images/pagination1.jpg",
-                "../images/pagination2.jpg",
-                "../images/pagination3.jpg",
-                "../images/pagination4.jpg"
+                "/static/images/game1.jpg",
+                "/static/images/game2.jpg",
+                "/static/images/game3.jpg",
+                "/static/images/game4.jpg"
             ]
         },
         {
@@ -48,46 +48,46 @@
             "live_link": "https://mmgolden.github.io/interactive-form/",
             "github_link": "https://github.com/mmgolden/interactive-form",
             "image_urls": [
-                "../images/form1.jpg",
-                "../images/form2.jpg",
-                "../images/form3.jpg",
-                "../images/form4.jpg"
+                "/static/images/form1.jpg",
+                "/static/images/form2.jpg",
+                "/static/images/form3.jpg",
+                "/static/images/form4.jpg"
             ]
         },
         {
             "id": 3,
-            "project_name": "Game Show App",
-            "description": "This is a browser-based, word guessing game called 'Phrase Hunter.' This project focuses on OOP (Object Oriented Programming). In the game, the player tries to guess a random, hidden phrase by clicking on letters on an onscreen keyboard.",
+            "project_name": "List Pagination and Filtering",
+            "description": "This project enhances the usability of a web page with pagination. This project uses 'progressive enhancement' so that JavaScript is used to enhance the web page, without making the web page dependent upon JavaScript. The pagination is dynamic, meaning it will work for any list containing any number of items.",
             "technologies": [
                 "JavaScript",
                 "CSS",
                 "HTML"
             ],
-            "live_link": "https://mmgolden.github.io/game-show-app/",
-            "github_link": "https://github.com/mmgolden/game-show-app",
+            "live_link": "https://mmgolden.github.io/list-pagination-and-filtering/",
+            "github_link": "https://github.com/mmgolden/list-pagination-and-filtering",
             "image_urls": [
-                "../images/game1.jpg",
-                "../images/game2.jpg",
-                "../images/game3.jpg",
-                "../images/game4.jpg"
+                "/static/images/pagination1.jpg",
+                "/static/images/pagination2.jpg",
+                "/static/images/pagination3.jpg",
+                "/static/images/pagination4.jpg"
             ]
         },
         {
             "id": 4,
-            "project_name": "Employee Directory",
-            "description": "This app is built for a fictional company called Awesome Startup, a distibuted company with remote employees working all over the world. They need a way for employees to share contact information with each other. The employee directory uses the Random User Generator API (randomuser.me) to grab information for 12 random 'employees'. This app uses the browser's Fetch API to request a JSON object from the API and parse the data so that 12 employees are listed with their thumbnail image, full name, email, and location.",
+            "project_name": "Random Quote Generator",
+            "description": "This app displays random quotes from women in tech automatically or by clicking on a button. It also changes the background color.",
             "technologies": [
-                "Fetch API",
                 "JavaScript",
-                "CSS"
+                "CSS",
+                "HTML"
             ],
-            "live_link": "https://mmgolden.github.io/employee-directory/",
-            "github_link": "https://github.com/mmgolden/employee-directory",
+            "live_link": "https://mmgolden.github.io/random-quote-generator/",
+            "github_link": "https://github.com/mmgolden/random-quote-generator",
             "image_urls": [
-                "../images/directory1.jpg",
-                "../images/directory2.jpg",
-                "../images/directory3.jpg",
-                "../images/directory4.jpg"
+                "/static/images/random1.jpg",
+                "/static/images/random2.jpg",
+                "/static/images/random3.jpg",
+                "/static/images/random4.jpg"
             ]
         }
     ]

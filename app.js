@@ -1,6 +1,8 @@
-// Import dependencies
+// Import dependencies and routes
 const express = require('express');
-const data = require('./data.json');
+const indexRoutes = require('./routes');
+const aboutRoutes = require('./routes/about');
+const projectRoutes = require('./routes/project');
 
 // Port
 const port = 3000;
@@ -14,39 +16,21 @@ app.set('view engine', 'pug');
 // Serve static files
 app.use('/static', express.static('public'));
 
-// Handle index route
-app.get('/', (req, res) => {
-    res.locals.data = data.projects;
-    res.render('index');
-});
+// Routes
+app.use(indexRoutes);
+app.use('/about', aboutRoutes);
+app.use('/project', projectRoutes);
 
-// Handle about route
-app.get('/about', (req, res) => {
-    res.render('about');
-});
-
-// Handle project route
-app.get('/project', (req, res) => {
-    res.render('project');
-});
-
-// 404 Error
+// Handle errors
 app.use((req, res, next) => {
-    const err = new Error('Page not found');
-    err.status = 404;
+    const err = new Error('Something went wrong');
+    err.status = 500;
     next(err);
 });
 
-// Handle errors
 app.use((err, req, res, next) => {
-    if (err.status === 404) {
-        res.status(404).render('error', {
-            message: err.message
-        });
-    } else {
-        console.error(`There was an error: ${err.message}`);
-        res.status(500).send('Something went wrong');
-    }
+    res.locals.error = err;
+    res.status(err.status).render('error');
 });
 
 // Create server
