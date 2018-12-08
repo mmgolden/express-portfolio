@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content 
-  article.grid-container.portfolio-intro
+  article.grid-container.portfolio-intro.portfolio-heading
     div
 
       //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together! 
@@ -23,6 +23,6 @@ block content
       each val, index in data
         .cell
           a(href=`/project/${index}`)
-            img.thumbnail(src=`${val.image_urls[0]}`)
+            img(src=`${val.image_urls[0]}`)
             h5= val.project_name
       

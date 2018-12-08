@@ -28,7 +28,7 @@ block content
         h6 Skills
 
         //- Replace the text in the li tags below with your own skills.  At this point, you should be able to list at least ten skills.
-        ul
+        ul.list
           li JavaScript
           li jQuery
           li Express
@@ -42,14 +42,25 @@ block content
         h6 Contact Info
 
         //- Add your own contact info
-        ul
-          li info@melindagolden.com
+        ul.list
+          li 
+            a(href="mailto:info@melindagolden.com", target="_blank") info@melindagolden.com
 
         //- Add URLs to the hrefs below to link to your social media accounts.
-        a.button.expanded(href='https://www.linkedin.com/in/melindamgolden/', target='_blank') LinkedIn
-        a.button.expanded(href='https://github.com/mmgolden', target='_blank') GitHub
-        a.button.expanded(href='https://twitter.com/melindamgolden', target='_blank') Twitter
-        a.button.expanded(href='https://medium.com/@melindagolden', target='_blank') Medium
+        ul.social
+          li
+            a(href='https://www.linkedin.com/in/melindamgolden/', target='_blank', aria-label="Linkedin")
+              i.fab.fa-linkedin-in
+          li
+            a(href='https://github.com/mmgolden', target='_blank', aria-label="Github")
+              i.fab.fa-github
+          li
+            a(href='https://twitter.com/melindamgolden', target='_blank', aria-label="Twitter")
+              i.fab.fa-twitter
+          li
+            a(href='https://medium.com/@melindagolden', target='_blank', aria-label="Medium")
+              i.fab.fa-medium-m
+
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
   
