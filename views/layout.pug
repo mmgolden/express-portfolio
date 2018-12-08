@@ -5,7 +5,8 @@ html(class="no-js" lang="en" dir="ltr")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Melinda Golden | Front-End Developer in Asheville, NC
-    link(href='https://fonts.googleapis.com/css?family=Nunito|Roboto:400,700', rel='stylesheet')
+    link(href="/static/images/favicon.ico", rel="shortcut icon")
+    link(href='https://fonts.googleapis.com/css?family=Nunito:400,600|Roboto:400,700', rel='stylesheet')
     link(href="https://use.fontawesome.com/releases/v5.5.0/css/all.css", rel="stylesheet", integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU", crossorigin="anonymous")
     link(rel='stylesheet', href='/static/css/foundation.css')
     link(rel='stylesheet', href='/static/css/style.css')
@@ -15,30 +16,19 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img(src='/static/images/profile.png', alt='profile image')
+            a(href="/")
+              img(src='/static/images/profile.png', alt='profile image')
           .cell.auto
-
-            //- Add your name here.
             h5 Melinda Golden
-
-            //- Add text here to describe who you are, what you do, and why you are so aweome.
             p.text-light
               | I am a remote front-end developer in Asheville, NC. I am passionate about JavaScript and building web applications.
-
-            //- Add about page route to the href below. 
             a(href='/about') Learn More →
-
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
-
-          //- Add your name here.  This is for the mobile screen sized version.
           span.title-bar-title Melinda Golden
-      block content
-        
-
-      
+      block content   
   script(src='/static/js/vendor/jquery.js')
   script(src='/static/js/vendor/what-input.js')
   script(src='/static/js/vendor/foundation.js')

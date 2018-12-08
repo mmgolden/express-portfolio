@@ -37,7 +37,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 600;
   color: #777;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 p {
@@ -50,24 +50,19 @@ p {
   border-radius: 5px;
 }
 
-.text-light{
+.text-light {
   color: #666;
 }
 
-.button{
-  background-color: #333;
+a {
+  color: #666;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
-.button:hover{
-  background-color: #111;
-}
-
-a{
-  color: #333;
-}
-
-a:hover{
-  color: #111;
+a:hover {
+  color: #31b6bb;
 }
 
 .image {
@@ -77,12 +72,24 @@ a:hover{
   border: solid 5px #fff;
   border-radius: 0;
   line-height: 0;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.title-bar {
+  background: #31b6bb;
+}
+
+.title-bar-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 50px;
 }
 
 /*****************************
 
-Portfolio
+Sidebar
 
 *****************************/
 
@@ -94,11 +101,15 @@ Portfolio
   background-size: cover;
   background-position: 70% 50%;
   color: #fff;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .portfolio-me::before {
   content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58,197,202,0.9)), to(rgba(58,177,201,0.9)));
+  background: -webkit-linear-gradient(top, rgba(58,197,202,0.9) 0%, rgba(58,177,201,0.9) 100%);
+  background: -o-linear-gradient(top, rgba(58,197,202,0.9) 0%, rgba(58,177,201,0.9) 100%);
   background: linear-gradient(to bottom, rgba(58,197,202,0.9) 0%, rgba(58,177,201,0.9) 100%);
   width: 100%;
   height: 100%;
@@ -131,12 +142,21 @@ Portfolio
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
 }
 
-.portfolio-me a:hover {
+.portfolio-me a:hover,
+.portfolio-me a:active {
   color: #177074;
 }
+
+/*****************************
+
+Breadcrumb
+
+*****************************/
 
 .portfolio-breadcrumb {
   margin: 0;
@@ -156,27 +176,34 @@ Portfolio
   color: #777;
 }
 
+/*****************************
+
+Portfolio
+
+*****************************/
+
 .portfolio-intro {
   margin: 0;
-  padding: 40px 50px 30px;
+  padding: 40px 20px;
 }
 
 .portfolio-heading {
   background: #fff;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 40px;
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 
 .portfolio-index {
   margin: 0;
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 
 .portfolio-index img {
   margin-bottom: 10px;
   border: 5px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+  -webkit-box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+          box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
 }
 
 .portfolio-index a {
@@ -193,8 +220,12 @@ Portfolio
   font-size: 1.188rem;
 }
 
+.portfolio-project .portfolio-meta {
+  margin-bottom: 30px;
+}
+
 .portfolio-meta {
-  padding-left: 20px;
+  font-weight: 600;
 }
 
 .portfolio-meta .button {
@@ -239,11 +270,65 @@ Portfolio
   border-radius: 50%;
   color: #fff;
   font-size: 1.2rem;
+  font-weight: 400;
   text-align: center;
   line-height: 40px;
+  -webkit-transition: background 0.5s;
+  -o-transition: background 0.5s;
   transition: background 0.5s;
 }
 
-.social li a:hover {
+.social li a:hover,
+.social li a:active {
   background: #177074;
+}
+
+.portfolio-link {
+  display: block;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #31b6bb;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.portfolio-link i {
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
+
+.portfolio-link:hover,
+.portfolio-link:active {
+  color: #177074;
+}
+
+/*****************************
+
+Media Queries
+
+*****************************/
+
+@media screen and (min-width: 768px) {
+  .portfolio-intro {
+    margin: 0;
+    padding: 40px 50px 30px;
+  }
+  .portfolio-heading {
+    margin-bottom: 40px;
+  }
+  .portfolio-meta {
+    padding-left: 20px;
+  }
+  .portfolio-heading {
+    padding: 30px 50px;
+  }
+  .portfolio-index {
+    padding: 10px 50px;
+  }
 }
