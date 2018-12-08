@@ -43,7 +43,7 @@ Step 1: Unzip the zip file.
 
 Step 2: Open the folder in a text editor.
 
-Step 3: Install dependencies
+Step 3: In the terminal, install dependencies
 
 ```
 npm install
@@ -54,5 +54,5 @@ Step 4: Start the app
 ```
 npm start
 ```
-Step 5: View the website on localhost
+Step 5: View the website on http://localhost:3000/
 
