@@ -8,9 +8,9 @@ const data = require('../data.json');
 const router = express.Router();
 
 // Handle project route
-router.get('/', (req, res) => {
+router.get('/:id', (req, res) => {
     res.locals.data = data.projects;
-    res.render('project');
+    res.render('project', req.params);
 });
 
 // Export router

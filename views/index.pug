@@ -9,7 +9,7 @@ block content
 
       //- Add a description for your portfolio, what this project is, it's purpose, what it's suppossed to accomplish, etc. 
       p.lead.text-light
-        | Welcome to my portfolio! You can view more information about each project by clicking on an image.
+        | Welcome to my portfolio! View more information about each project by clicking on an image. Feel free to get in touch. I would love to hear from you!
   article.grid-container.portfolio-index
     
     .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
@@ -22,7 +22,7 @@ block content
 
       each val, index in data
         .cell
-          a(href="/project")
+          a(href=`/project/${index}`)
             img.thumbnail(src=`${val.image_urls[0]}`)
             h5= val.project_name
       
